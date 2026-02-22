@@ -10,16 +10,27 @@
 
 <body>
     <div class="container">
-        <h1 class="login-text">Login</h1>
+        <h1 class="login-text">Entrar</h1>
             <div class="inputs-container">
-                <label email:>Email:<input type="email" placeholder="Digite seu E-mail"></label>
-                <label Senha:>Senha:<input type="password" placeholder="Digite sua Senha"></label>
+                <label email:>Email:
+                    <input type="email" id="login" placeholder="Digite seu E-mail">
+                </label>
+                
+                <label Senha:>Senha:
+                    <input 
+                    type="password" 
+                    placeholder="Digite sua Senha"
+                    id="senha">
+                </label>
+                
             </div>
             <a class="redefinir-senha" href="#">
                 <p>Esqueceu a senha?</p>
             </a>
-            <button>Entrar</button>
+            <button type="submit" onclick="logar(); return false">Entrar</button>
             </div>
+
+<script src="script.js"></script>
 </body>
 </html>
             
