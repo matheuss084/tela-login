@@ -3,7 +3,7 @@
     padding: 0;
 }
 
-body {
+.body-login {
     background-color: blueviolet;
     width: 100%;
     height: 100vh;
@@ -11,6 +11,7 @@ body {
     justify-content: center;
     align-items: center;
 }
+
 .login-text {
     display: flex;
     margin-bottom: 40px;
@@ -50,7 +51,7 @@ body {
     width: 100%;
     outline: none;
     box-sizing: border-box;
-  }
+}
 
   .inputs-container label{
     font-size: 12px;
@@ -89,10 +90,154 @@ body {
     transform: scale(1.05);
     box-shadow: 0px 5px 15px rgba(0,0,0,0.3);
 }
+
+/* PAGINA HOME  */
+
+.home {
+    background-color: rgb(216, 189, 241);
+    font-family: Arial, Helvetica, sans-serif;
+    width: 100%;
+    height: 100%;
+}
+
+.principal {
+    width: 100%;
+    height: auto;
+    display: flex;
+    box-sizing: border-box;
+
+    flex-direction: column;
+    margin: 0;
+}
+
+h1 {
+    color: black;
+    font-size: 40px;
+}
+
+.sobre {
+    padding:0;
+    width: 100%;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.sobre-text  {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    text-align: center;
+    font-weight: normal;
+    color: rgb(66, 64, 64);
+}
+
+.sobre-text p {
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.opcoes-text {
+    display: flex;
+    width: 80%;
+    gap: 2%;
+    align-items: center;
+    justify-content: center;
+    margin-top: 40px;
+}
+.opcoes-text p{
+    background: #fff;
+    padding: 10px;
+    border-radius: 20px;
+    width: 180px;
+    height: 25px;
+    text-align: center;
+    color: rgb(102, 100, 100);
+    font-weight: bold;
+    font-size: 12px;
+    box-shadow: 4px 4px 10px 0px rgba(0, 0, 0, 0.1);
+
+}
+
+
+.upload {
+    background: rgba(245, 209, 250, 0.8);
+    width: 40%;
+    height:600px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding: 20px;
+    margin-top: 20px;
+    box-shadow: 4px 4px 10px 0px rgba(0, 0, 0, 0.3);
+}
+
+.upload-caixa {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 2px dashed ;
+    border-radius: 8px;
+    border-color: rgb(109, 106, 106);
+    padding: 15px;
+    color: rgb(109, 106, 106);
+    font-size: 80%;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.upload-caixa:hover{
+    border-color: darkmagenta ;
+    color: darkmagenta;
+}
+
+.upload img{
+    width: 50px;
+    height: auto;
+}
+
+.btn-analise {
+    width: 80%;
+    height: 40px;
+    background: #4a0094;
+    color: #fff;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    margin-top: 20px;
+    cursor: pointer;
+    box-shadow: 4px 4px 10px 0px rgba(0, 0, 0, 0.3);
+    transition: 0.3s;
+}
+
+.btn-analise:hover {
+    transform: translateY(-2px);
+}
+
+.ia-mensagem {
+    font-size: 12px;
+    color: rgb(121, 119, 119);
+    margin-top: 30px;
+    width: 80%;
+    text-align: center;
+}
+
+
+
 @media (max-width: 480px) {
     .container {
         padding: 30px 15px;
     }
+    
     .login-text {
         margin-bottom: 20px;
     }
@@ -100,4 +245,41 @@ body {
         width: 100%;
     } 
     
+    .upload {
+        width: 80%;
+    }
+
+    .ia-mensagem {
+        width: 90%;
+        font-size: 9px;
+    }
+
+    .opcoes-text {
+        margin-top: 20px;
+    }
+    
+    .opcoes-text p {
+         padding: 8px;
+         font-size: 9px;
+         width: 180px;
+         text-align: center;
+         justify-content: center;
+    }
+
+    .sobre-text {
+        font-size: 10px;
+    }
+
+    .sobre-text p {
+        font-size: 9px;
+    }
+
+    .upload-caixa {
+        width: 80%;
+        text-align: center;
+    }
+
+    .gastos-text {
+        font-size: 30px;
+    }
 }
